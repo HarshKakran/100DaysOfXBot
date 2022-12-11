@@ -1,0 +1,16 @@
+{
+  "name": "100daysofx_twitterbot",
+  "version": "1.0.0",
+  "description": "This is a twitter bot to support the 100DaysOfX community.",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HarshKakran",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "twit": "^2.2.11"
+  }
+}
