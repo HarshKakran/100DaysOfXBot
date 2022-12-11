@@ -79,5 +79,5 @@ let favorite  = () => {
 retweet()
 favorite()
 // retweet in every 50 minutes
-setInterval(retweet, 1000 * 60 * 15);
-setInterval(favorite, 1000 * 60 * 15);
+setInterval(retweet, 1000 * 60);
+setInterval(favorite, 1000 * 60);
