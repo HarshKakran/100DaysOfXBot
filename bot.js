@@ -12,7 +12,7 @@ let Twitter = new twit({
 
 let retweet  = () => {
     let params = {
-        q: '#100DaysOfX, #100daysofx',
+        q: '#100DaysOfX, #100daysofx, #100DaysOfCode, #100DaysOfHealth, #100DaysOfFitness',
         result_type: 'recent',
     }
 
@@ -44,7 +44,7 @@ let retweet  = () => {
 
 let favorite  = () => {
     let params = {
-        q: '#100DaysOfX, #100daysofx',
+        q: '#100DaysOfX, #100daysofx, #100DaysOfCode, #100DaysOfHealth, #100DaysOfFitness',
         result_type: 'recent',
     }
 
