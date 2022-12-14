@@ -11,6 +11,7 @@ let Twitter = new twit({
                     })
 
 let retweet_and_fav  = (hashtags) => {
+    console.log(`Time for ${hashtags}`);
     let params = {
         q: hashtags,
         result_type: 'recent',
@@ -27,7 +28,7 @@ let retweet_and_fav  = (hashtags) => {
             for(let i=0; i<tweets.length; i++){    
                 let tweetId = tweets[i].id_str;
 
-                console.log(`Time to retweet ${tweetId}`);
+                console.log(`Retweeting: ${tweetId}`);
                 Twitter.post('statuses/retweet/:id', {
                     id: tweetId
                 }, (e, response) => {
@@ -87,12 +88,10 @@ let retweet_and_fav  = (hashtags) => {
 //     });
 // }
 
-console.log(`Starting #100DaysOfX`);
+console.log(`IT'S BEEN 10 MINUTES... STARTING ENGINES... rrrrrrrrr...`)
 retweet_and_fav('#100DaysOfX, #100daysofx');
 
-console.log(`Starting #100DaysOfCode`)
 setTimeout(retweet_and_fav, 1000*60, '#100DaysOfCode, #100daysofcodingchallenge');
 
 
-console.log(`Starting #100DaysOfHealth and Fitness`)
 setTimeout(retweet_and_fav, 1000*60, '#100DaysOfHealth, #100DaysOfFitness');
